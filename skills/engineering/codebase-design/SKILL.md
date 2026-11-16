@@ -112,3 +112,7 @@ Good interfaces make testing natural:
 
 - **Deepening a cluster given its dependencies**, see [DEEPENING.md](DEEPENING.md): dependency categories, seam discipline, and replace-don't-layer testing.
 - **Exploring alternative interfaces**, see [DESIGN-IT-TWICE.md](DESIGN-IT-TWICE.md): spin up parallel sub-agents to design the interface several radically different ways, then compare on depth, locality, and seam placement.
+
+## Departing from this
+
+These principles are defaults, not laws. Code may depart from one where following it would make that code worse, such as a shallow module kept because it gives one external call a name, or a side effect left in place because a script's whole job is that effect. It says why, beside the departure or in the change's PR, and a reviewer judges that reason, not the departure.
